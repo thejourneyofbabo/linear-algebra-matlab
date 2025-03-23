@@ -5,8 +5,8 @@ v1 = [1; 2]; % example vector 1
 v2 = [-2; 1]; % example vector 2
 
 % Define weights
-alpha = -0.3;
-beta = -0.5;
+alpha = 0.3;
+beta = 0.5;
 
 %%%%%%% TODO %%%%%%
 % Compute the linear weighted combination
