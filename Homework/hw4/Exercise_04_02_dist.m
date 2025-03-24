@@ -30,15 +30,14 @@ print('Figure_03_02','-dpng','-r300'); % Saves the figure as a PNG with 300 DPI
 
 %%%%%%%%%%%%%% ToDo %%%%%%%%%%%%%%
 function [cor, cos] = corrAndCosine(x, y)
-    num = ; 
-    den = ; 
-    cos = ;
+    num = dot(x, y); 
+    den = norm(x)*norm(y); 
+    cos = num / den;
 
     xm = x - mean(x);
     ym = y - mean(y);
-    num = ; 
-    den = ;
-    cor = ;
-
+    num = dot(xm, ym); 
+    den = norm(xm)*norm(ym);
+    cor = num / den;
 end
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
