@@ -21,7 +21,7 @@ quiver3(0, 0, 0, k(1), k(2), k(3), 'b', 'LineWidth', 1, 'AutoScale', 'off', 'Max
 %%%%%%% TODO %%%%%%
 % Draw the vector v.
 % Draw arrow by using function 'quiver3'
-% xxxxxxx(0, 0, 0, x(x), x(x), x(x), 'm', 'LineWidth', 1, 'AutoScale', 'off', 'MaxHeadSize', 1, 'DisplayName', 'v');
+quiver3(0, 0, 0, v(1), v(2), v(3), 'm', 'LineWidth', 1, 'AutoScale', 'off', 'MaxHeadSize', 1, 'DisplayName', 'v');
 %%%%%%%%%%%%%%%%%%%
 
 % Visualize each multiplication of basis vector
