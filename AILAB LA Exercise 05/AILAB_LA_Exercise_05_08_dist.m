@@ -14,7 +14,7 @@ identityMatrix = eye(3);
 % Add the scalar multiplied by the identity matrix to the original matrix
 % The form of equation is 'result = matrix + scalar*identity_matrix'
 % Refer to the lecture slide 24
-modifiedMatrix = % xxxxxxxxxxxx + xxxxxx * xxxxxxxxxxxxxx;
+modifiedMatrix = squareMatrix + scalar * identityMatrix;
 %%%%%%%%%%%%%%%%%%%%
 
 % Create and visualize the original square matrix in a new figure

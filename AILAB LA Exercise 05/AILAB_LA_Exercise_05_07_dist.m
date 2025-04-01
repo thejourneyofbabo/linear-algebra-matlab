@@ -5,7 +5,7 @@ clc; clear; close all;
 % Create a 5x5 zero matrix
 % Use function 'zeros(row,col)'
 % Refer to the lecture slide 19
-zeroMatrix = % xxxxx(x, x);
+zeroMatrix = zeros(5, 5);
 %%%%%%%%%%%%%%%%%%%%
 
 % Create and visualize the zero matrix

@@ -5,7 +5,7 @@ clc; clear; close all;
 % Create a 5x5 identity matrix
 % Use function 'eye(row,col)'
 % Refer to the lecture slide 17 
-identityMatrix = % xxx(x, x);
+identityMatrix = eye(5, 5);
 %%%%%%%%%%%%%%%%%%%%
 
 % Create and visualize the identity matrix

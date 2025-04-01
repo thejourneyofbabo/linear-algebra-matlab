@@ -9,7 +9,7 @@ randomMatrix = randi(10, 5, 5); % Generate a 5x5 matrix with integers between 1 
 % Use function 'triu(matrix)' to create upper triangular matrix
 % or 'tril(matrix)' to create lower triangular matrix
 % Refer to the lecture slide 15
-upperTriangularMatrix = % xxxx(xxxxxxxxxxxx);
+upperTriangularMatrix = triu(randomMatrix);
 %%%%%%%%%%%%%%%%%%%%
 
 % You can create lower triangular matrix use function 'tril(matrix)'

@@ -9,8 +9,8 @@ diagonalElements = [1, 2, 3, 4, 5];
 % Create a diagonal matrix using the diag function
 % Use function 'diag(vector)' and 'diag(matrix)'
 % Refer to the lecture slide 13
-diagonalVector = % xxxx(xxxxxxxxxxx);
-diagonalMatrix = % xxxx(xxxxxxxxxxxxxxxx);
+diagonalVector = diag(InputMatrix);
+diagonalMatrix = diag(diagonalElements);
 %%%%%%%%%%%%%%%%%%%%
 
 % Display

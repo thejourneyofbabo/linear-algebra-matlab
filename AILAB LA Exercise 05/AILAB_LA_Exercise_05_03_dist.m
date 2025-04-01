@@ -5,7 +5,7 @@ clc; clear; close all;
 % 4x6 matrix with random values
 % Use function 'rand(row,col)' or 'randi(row,col)'
 % Refer to the lecture slide 10
-matrix = % xxxx(x, x);
+matrix = rand(4, 6);
 %%%%%%%%%%%%%%%%%%%%
 
 % Create a figure for visualization

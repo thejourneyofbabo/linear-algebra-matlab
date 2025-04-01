@@ -9,8 +9,8 @@ matrix = randi(10, 3, 2); % Generate a 3x2 matrix with integers between 1 and 10
 % Use function ' ' ' (ex) matrix'
 % or 'transpose(matrix)'
 % Refer to the lecture slide 48
-transposedMatrix = % xxxxxx;
-transposedMatrix2 = % xxxxxxxxx(xxxxxx);
+transposedMatrix = matrix';
+transposedMatrix2 = transpose(matrix);
 %%%%%%%%%%%%%%%%%%%%
 
 % Create and visualize the original matrix as vectors

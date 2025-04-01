@@ -9,7 +9,7 @@ squareMatrix2 = randi(10, 3, 3); % Generate another 3x3 matrix with integers bet
 % Calculate the Hadamard product of the two matrices
 % Use hadamard multiplication function '.*'
 % Refer to the lecture slide 26
-hadamardProduct = % xxxxxxxxxxxxx .* xxxxxxxxxxxxx;
+hadamardProduct = squareMatrix1 .* squareMatrix2;
 %%%%%%%%%%%%%%%%%%%%
 
 % Create and visualize the first square matrix

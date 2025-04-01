@@ -8,7 +8,7 @@ originalMatrix = rand(6, 10);
 % Extract submatrix from rows 2 to 4 and columns 1 to 5
 % You can extrcat by 'submatrix=matrix(row_start:row_end, col_start:col_end)'
 % Refer to the lecture slide 10
-subMatrix = % xxxxxxxxxxxxxx(x:x, x:x);
+subMatrix = originalMatrix(2:4, 1:5);
 %%%%%%%%%%%%%%%%%%%%
 
 % Display
