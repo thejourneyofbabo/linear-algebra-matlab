@@ -13,7 +13,13 @@ disp(C);
 function C = addMatrices(A, B)
 
   % Check that both matrices have the same size
-
+  % [rowsA, colsA] = size(A);
+  % [rowsB, colsB] = size(B);
+  if ~isequal(size(A), size(B))
+      error('Please put same size matricies');
+  end
   % Summation
+  
+  C = A + B;
 end
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
