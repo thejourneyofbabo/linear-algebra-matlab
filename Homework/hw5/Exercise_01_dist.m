@@ -2,10 +2,12 @@ clc; clear; close all;
 
 %%%%%%%%%%% ToDo %%%%%%%%%%%
 % Create the matrix
+C = reshape(0:99, 10, 10)';
 
 % Extract submatrix
 % Generate function for extract submatrix
-
+slice_indices = [3, 4, 1, 5]; % start row index, end row index, start col index, end col index
+C_1 = GenSubmatrix(C, slice_indices);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Visualize the matrices as maps
@@ -46,7 +48,10 @@ end
 % write code here
 % input : matrix, start row index, end row index, start col index, end col index
 % Output : submatrix
-function sub_matrix = GenSubmatrix()
+function sub_matrix = GenSubmatrix(origin_matrix, slice_info)
+    [st_row, ed_row, st_col, ed_col] = deal(slice_info(1), slice_info(2), slice_info(3), slice_info(4));
+
+    sub_matrix = origin_matrix(st_row:ed_row, st_col:ed_col);
 
 end
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
