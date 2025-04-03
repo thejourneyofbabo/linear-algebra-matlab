@@ -12,8 +12,15 @@ disp(['Is the matrix symmetric? ', num2str(isSym)]);
 %%%%%%%%%%% ToDo %%%%%%%%%%%
 function isSymmetric = isMatrixSymmetric(S)
   % Difference between matrix and its transpose
+  mat_diff = S - S';
+  SSE = norm(mat_diff);
 
   % Check whether sum of squared errors (SSE) is smaller than a threshold
+  if SSE > 0
+      isSymmetric = 0;
+  else
+      isSymmetric = 1;
+  end
 
   % Output TRUE if sse is tiny; FALSE means the matrix is asymmetric
 
