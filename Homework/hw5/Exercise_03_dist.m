@@ -10,10 +10,10 @@ input_matrix_2 = randn(n, m);
 % write code here
 
 %%%%%%%%%%% ToDo %%%%%%%%%%%
-if k == 
-    mulMatrix01 = matrixMultiplication();
+if k == size(input_matrix_1, 1) && size(input_matrix_2, 2)
+    mulMatrix01 = matrixMultiplication(input_matrix_1, input_matrix_2, m);
 else
-    error('Write the reason of error');
+    error('Please input valid Matrix');
 end
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -32,7 +32,7 @@ disp(mulMatrix02);
 function mulMatrix = matrixMultiplication(inputMatrix01, inputMatrix02, m)
     for rowi = 1:m
         for coli = 1:m
-            mulMatrix(rowi, coli) = dot(inputMatrix01(xxxx, :), inputMatrix02(:, xxxx));
+            mulMatrix(rowi, coli) = dot(inputMatrix01(rowi, :), inputMatrix02(:, coli));
         end
     end
 end
