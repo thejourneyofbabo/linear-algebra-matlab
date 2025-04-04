@@ -1,10 +1,10 @@
 clc; clear; close all;
 % Test the function with a symmetric matrix
 % sym matrix
-% S = [1, 2, 3; 2, 5, 6; 3, 6, 9];
+S = [1, 2, 3; 2, 5, 6; 3, 6, 9];
 
 % not sym matrix
-S = [1, 1, 2; 2, 5, 5; 7, 6, 9];
+% S = [1, 1, 2; 2, 5, 5; 7, 6, 9];
 
 isSym = isMatrixSymmetric(S);
 disp(['Is the matrix symmetric? ', num2str(isSym)]);
@@ -14,6 +14,9 @@ function isSymmetric = isMatrixSymmetric(S)
   % Difference between matrix and its transpose
   mat_diff = S - S';
   SSE = norm(mat_diff);
+
+  % SSE_2 = sum(mat_diff(:).^2);
+  % disp(SSE_2)
 
   % Check whether sum of squared errors (SSE) is smaller than a threshold
   if SSE > 0
