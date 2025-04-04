@@ -9,8 +9,8 @@ B = [1, 3, 2; 3, 1, 5; 2, 4, 1];
 % Calculate the determinant of matrix A,B
 % Use 'det(matrix)' function
 % Refer to the lecture slide 22
-determinantA = %xxx(x);
-determinantB = %xxx(x);
+determinantA = det(A);
+determinantB = det(B);
 %%%%%%%%%%%%%%%%%%%%
 
 % Display the determinant
