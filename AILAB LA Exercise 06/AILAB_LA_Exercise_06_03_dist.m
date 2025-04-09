@@ -9,8 +9,8 @@ B = [1 -1; -2 3];
 % Calculate the null spaces of A and B
 % Use 'null(matrix)' function
 % Refer to the lecture slide 47
-nullA = % xxx(x);
-nullB = % xxx(x);
+nullA = null(A);
+nullB = null(B);
 %%%%%%%%%%%%%%%%%%%%
 
 % Display the null spaces

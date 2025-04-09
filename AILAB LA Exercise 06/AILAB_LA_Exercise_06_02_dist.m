@@ -10,7 +10,7 @@ v2 = [0; 2; 2];
 % Remind : get normal vector use 'cross(vector1, vector2)' function
 % Get column space by span of two vectors
 % Refer to the lecture slide 40
-normal = % xxx(x,x);
+normal = cross(v1,v2);
 %%%%%%%%%%%%%%%%%%%%
 
 % Choose a point on the plane (for example, using v1)
