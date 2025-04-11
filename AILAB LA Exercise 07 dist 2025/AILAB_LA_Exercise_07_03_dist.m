@@ -38,7 +38,7 @@ function rotateCircle(src, hPlot, wobbyCircleX, wobbyCircleY)
     % Use '*' function (ex)tranform_matrix * src_mat
     % the src_mat is consist of wobbyCircleX and wobbyCircleY
     % Refer to the lecture slide 22
-    rotatedPoints = % x x [x; x];
+    rotatedPoints = R * [wobbyCircleX; wobbyCircleY];
     %%%%%%%%%%%%%%%%%%%%
     
     % Update plot data
