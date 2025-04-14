@@ -18,7 +18,7 @@ dataMat = numericalData{:,:} - repmat(columnMeans, size(numericalData, 1), 1);
 %%%%%%% TODO %%%%%%%
 % Compute the covariance matrix using 'cov(matrix)' function
 % Refer to the lecture slide 9
-covarianceMatrix = % x(x);
+covarianceMatrix = cov(dataMat);
 %%%%%%%%%%%%%%%%%%%%
 
 % Visualize the covariance matrix

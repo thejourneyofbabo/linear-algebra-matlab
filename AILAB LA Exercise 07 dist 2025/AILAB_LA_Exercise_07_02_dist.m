@@ -13,7 +13,7 @@ disp('Column Means:');
 disp(columnMeans);
 
 % Mean-center the data
-dataMat = numericalData{:,:} - repmat(columnMeans, size(numericalData, 1), 1);
+dataMat = numericalData{:,:} - repmat(columnMeans, size(numericalData, 1), 1); %% 해보기!!!
 
 % Compute the covariance matrix
 covarianceMatrix = cov(dataMat);
@@ -30,7 +30,7 @@ axis tight;
 %%%%%%% TODO %%%%%%%
 % Compute and visualize the correlation matrix using 'corrcoef(matrix)' function
 % Refer to the lecture slide 12
-correlationMatrix = % x(x);
+correlationMatrix = corrcoef(dataMat);
 %%%%%%%%%%%%%%%%%%%%
 figure;
 imagesc(correlationMatrix);
