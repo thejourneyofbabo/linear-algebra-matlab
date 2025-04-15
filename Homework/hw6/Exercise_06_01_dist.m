@@ -19,7 +19,8 @@ for si = 1:length(scalingVals)
     % generate a random scaled matrix
     m = scalingVals(si) * randn(10, 10);
     % store its norm Frobenius
-    frnorm = sqrt(trace(m'*m));
+    %frnorm = sqrt(trace(m'*m));
+    frnorm = norm(m, 'fro');
     % matrixNorms
     matrixNorms(si, expi) = frnorm;
   end
