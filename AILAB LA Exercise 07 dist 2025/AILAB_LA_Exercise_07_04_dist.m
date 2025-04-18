@@ -31,7 +31,7 @@ for rowi = halfKr + 1 : imgN + halfKr
         % Input is pieceOfImg and kernel
         % Output is the sum of element of element-wise multiplicaited matrix
         % Refer to the lecture slide 32
-        dotprod = % x(x(x x x));
+        dotprod = sum(sum(pieceOfImg.* kernel));
         %%%%%%%%%%%%%%%%%%%%
         
         % Store the result for this pixel
