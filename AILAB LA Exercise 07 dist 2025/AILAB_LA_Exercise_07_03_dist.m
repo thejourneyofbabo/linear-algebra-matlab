@@ -31,7 +31,7 @@ function rotateCircle(src, hPlot, wobbyCircleX, wobbyCircleY)
     title(sprintf('Rotating wobby circle - Angle: %.2f', x));
     
     % Define the rotation matrix
-    R = [1 1-x*x; 0 1];
+    R = [1 x*x-1; 0 1];
     
     %%%%%%% TODO %%%%%%%
     % Create the rotated wobby circle

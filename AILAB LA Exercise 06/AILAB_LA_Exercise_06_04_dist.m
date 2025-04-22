@@ -15,7 +15,7 @@ else
     % Calculate the inverse of the matrix
     % Use 'inv(matrix)' function
     % Refer to the lecture slide 67
-    inverseMatrix = % xxx(x);
+    inverseMatrix = inv(matrix);
     %%%%%%%%%%%%%%%%%%%%
 
     % Multiply the matrix by vector1 to get vector2

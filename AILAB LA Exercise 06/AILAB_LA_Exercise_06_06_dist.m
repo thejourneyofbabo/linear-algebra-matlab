@@ -11,8 +11,8 @@ matrix = [1, 2; 3, 4];
 % If you just use 2x2 matrix as input, the results are different
 % Use 'matrix(:)' for appropriate calculation
 % Refer to the lecture slide 92
-frobeniusNorm = % xxx(x, x);
-L2Norm = % xxx(x,x);
+frobeniusNorm = norm(matrix, 'fro');
+L2Norm = norm(matrix(:),2);
 %%%%%%%%%%%%%%%%%%%%
 
 % Display the Frobenius norm

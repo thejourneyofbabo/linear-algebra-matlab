@@ -9,8 +9,8 @@ matrix2 = [2, 3, 0; -2, 7, 4; -4, -1, 6];
 % Calculate the trace of the matrix
 % Use 'trace(matrix)' function
 % Refer to the lecture slide 95
-tra1 = % xxx(x);
-tra2 = % xxx(x);
+tra1 = trace(matrix1);
+tra2 = trace(matrix2);
 %%%%%%%%%%%%%%%%%%%%
 
 % Display the Frobenius norm
@@ -20,5 +20,5 @@ disp('Matrix2');
 disp(matrix2);
 disp('Trace of the matrix1: ');
 disp(tra1);
-disp('Trace of the matrix1: ');
+disp('Trace of the matrix2: ');
 disp(tra2);
