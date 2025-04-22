@@ -12,16 +12,16 @@ matrix2 = [1, 2, 4; 3.1, 6, 12];
 % Define the 3x3 identity matrix and 3x3 zero matrix
 % Refer to the lecture slide 80
 % Remind : Identity matrix & zero matrix
-identityMatrix = % xxx(x);
-zeroMatrix = % xxx(x,x);
+identityMatrix = eye(3);
+zeroMatrix = zeros(3,3);
 
 % Calculate the ranks
 % Use 'rank(vector/matrix)' function
-vector_rank = % xxx(x);
-matrix1_rank = % xxx(x);
-matrix2_rank = % xxx(x);
-identity_rank = % xxx(x);
-zero_rank = % xxx(x);
+vector_rank = rank(vector);
+matrix1_rank = rank(matrix1);
+matrix2_rank = rank(matrix2);
+identity_rank = rank(identityMatrix);
+zero_rank = rank(zeroMatrix);
 %%%%%%%%%%%%%%%%%%%%
 
 % Calculate and display the rank of each
