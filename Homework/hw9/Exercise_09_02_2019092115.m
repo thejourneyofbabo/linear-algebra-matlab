@@ -19,7 +19,7 @@ disp('fullR:');
 disp(round(fullR, 3));
 
 % Invertible submatrix (first 4x4 part of R)
-Rsub = R(1:4,:);
+Rsub = fullR(1:4,:);
 
 % Inverses
 % calculate full inverse of Rsub

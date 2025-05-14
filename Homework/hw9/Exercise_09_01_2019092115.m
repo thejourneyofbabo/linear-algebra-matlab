@@ -7,7 +7,6 @@ random_matrix = randn(5, 5);
 %%%%%%% TODO %%%%%%%
 % Generate Q matrix
 [Q, R] = qr(random_matrix);
-zaAA
 % Get Transpose of Q & Inverse of Q
 Qt = Q';  % Transpose of Q
 Qi = inv(Q);  % Inverse of Q
