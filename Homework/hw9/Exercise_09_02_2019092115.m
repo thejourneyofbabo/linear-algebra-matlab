@@ -7,10 +7,10 @@ A = randn(10, 4);
 % Compute the complete QR decomposition
 %%%%%%% TODO %%%%%%%
 % economy sized R
-[~, R] = ;
+[~, R] = qr(A, "econ");
 
 % full sized R
-[~, fullR] = ;
+[~, fullR] = qr(A);
 
 % Examine R (rounded to 3 decimal places)
 disp('R:');
@@ -19,13 +19,13 @@ disp('fullR:');
 disp(round(fullR, 3));
 
 % Invertible submatrix (first 4x4 part of R)
-Rsub = ;
+Rsub = R(1:4,:);
 
 % Inverses
 % calculate full inverse of Rsub
-Rsub_inv = ;
+Rsub_inv = inv(Rsub);
 % calculate left inverse of R
-Rleftinv = ;
+Rleftinv = inv(R'*R)*R';
 %%%%%%% TODO %%%%%%%
 
 % Display both inverses

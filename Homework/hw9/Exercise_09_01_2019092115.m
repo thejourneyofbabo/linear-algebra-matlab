@@ -6,30 +6,30 @@ random_matrix = randn(5, 5);
 
 %%%%%%% TODO %%%%%%%
 % Generate Q matrix
-[Q, R] = ;
-
+[Q, R] = qr(random_matrix);
+zaAA
 % Get Transpose of Q & Inverse of Q
-Qt = ;  % Transpose of Q
-Qi = ;  % Inverse of Q
+Qt = Q';  % Transpose of Q
+Qi = inv(Q);  % Inverse of Q
 
 % disp QTQ, QQT, QIQ, QQI
 
 % QtQ
 disp("QtQ")
-disp(round(, 8));
+disp(round(Qt*Q, 8));
 disp(' ');
 
 % QQt
 disp("QQt")
-disp(round(, 8));
+disp(round(Q*Qt, 8));
 disp(' ');
 
 % QiQ
 disp("QiQ")
-disp(round(, 8));
+disp(round(Qi*Q, 8));
 disp(' ');
 
 % QQi
 disp("QQi")
-disp(round(, 8));
+disp(round(Q*Qi, 8));
 %%%%%%% TODO %%%%%%%

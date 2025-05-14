@@ -20,6 +20,7 @@ for i = 1:size(A, 2)
         % previous orthogonal vector
         prev_u = Q(:, j);
         v = v - dot(prev_u, v) * prev_u / dot(prev_u, prev_u);
+        % v= v - (prev_u'* v) / (prev_u' * prev_u) * prev_u;
 
         %%%%%%%%%%%%%%%%%%%%
     end

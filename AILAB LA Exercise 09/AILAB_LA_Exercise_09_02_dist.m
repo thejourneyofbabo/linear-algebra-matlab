@@ -2,7 +2,10 @@
 clc; clear; close all;
 
 % Matrix A
-A = [1; -1];
+% A = [1; -1];
+A = [1  2;
+    3  4;
+    5  6];
 
 %%%%%%% TODO %%%%%%%
 % Refer to the lecture slide 24
