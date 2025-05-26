@@ -8,17 +8,19 @@ Individual_height = [175,181,159,165,172,183,160,175,167,180,158,172,170,185,162
 
 %%%%%%% TODO %%%%%%%
 % Design matrix
-X = [];
-y = ;
+X = [ones(length(Weight),1), Weight, Parent_height];
+% X = [Weight, Parent_height];
+
+y = Individual_height;
 
 % Compute the left-inverse of X
-X_leftinv = ;
+X_leftinv = (X'*X)^-1 * X';
 
 % Calculate beta
-beta = ;
+beta = X_leftinv * y;
 
 % Predict y values using beta
-y_pred = ;
+y_pred = X*beta;
 %%%%%%%%%%%%%%%%%%%%
 
 % Display beta
