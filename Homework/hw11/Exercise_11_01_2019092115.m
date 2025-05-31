@@ -8,16 +8,16 @@ y = [4; 7; 8];
 %%%%%%% GLM Solution via Geometric Interpretation %%%%%%%
 % Refer to the lecture slide 18
 % Compute the left-inverse of X using inv()
-X_leftinv = ;
+X_leftinv = (X'*X)^-1 *X';
 
 % Calculate least squares solution: projection of y onto col(X)
-beta = ;
+beta = X_leftinv * y;
 
 % Compute projection of y onto col(X)
-y_pred = ;
+y_pred = X * beta;
 
 % Residual vector: difference between y and projection
-residual = ;
+residual = y - y_pred;
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Display results

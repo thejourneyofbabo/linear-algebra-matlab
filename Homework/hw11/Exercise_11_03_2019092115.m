@@ -10,20 +10,20 @@ X = [ones(20,1), number_of_course]; % Use number_of_course
 y = [25,54,21,80,68,84,62,57,40,60,64,45,38,51,52,58,21,75,70,70]';
 
 %%%%%%% TODO %%%%%%%
-% Compute the left-inverse of X
-X_leftinv = ;
+% QR decomposition of X
+[Q, R] = qr(X, "econ"); % Economy size QR decomposition
 
-% Calculate the beta
-beta = ;
+% Calculate the beta using Q and R
+beta = R^-1 * Q' * y;
 
-% Predict y values using beta
-y_pred = ;  
+% Predict y values using X and beta
+y_pred = X * beta;
 
 % Calculate residuals
-residuals = ;
+residuals = y - y_pred;
 
 % Calculate sum of squared errors (SSE)
-sse = ;
+sse = sum(residuals.^2);
 %%%%%%%%%%%%%%%%%%%%
 
 % Plot
@@ -36,7 +36,7 @@ for i = 1:length(X)
     plot([number_of_course(i) number_of_course(i)], [y(i) y_pred(i)], 'k--');  % Plot residuals as dashed lines
 end
 title(sprintf('SSE = %.2f', sse));
-xlabel('Number of Courses ');
+xlabel('Number of Courses');
 ylabel('Life Happiness');
 legend('X and y', 'Prediction with beta', 'Location', 'northwest');
 hold off;
