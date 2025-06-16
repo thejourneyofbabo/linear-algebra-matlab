@@ -8,7 +8,7 @@ T = randi([-10, 10], 40, 10);
 % Refer to the lecture slide 21
 % Compute the product of T transpose and T
 % Use ''' or 'transpose(matrix)' function
-TtT = T' * T
+TtT = T' * T;
 
 % Compute the inverse of the product
 % Use 'inv(matrix)' function

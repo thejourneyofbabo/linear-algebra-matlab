@@ -12,7 +12,8 @@ randnMat = randn(4,4);
 A = Q'*Lambda*Q;
 
 % the matrix minus its transpose should be zeros (within precision error)
-result = A-A';
+% result = A-A';
+result = round(A-A', 5);
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 disp(result);

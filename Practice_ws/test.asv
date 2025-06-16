@@ -1,0 +1,11 @@
+clc; close all; clear;
+
+syms a11 a12 a21 a22 a31 a32
+
+A = [a11, a12; 
+     a21, a22; 
+     a31, a32];
+
+disp(A'*A);
+
+A'*A - (A'*A)'

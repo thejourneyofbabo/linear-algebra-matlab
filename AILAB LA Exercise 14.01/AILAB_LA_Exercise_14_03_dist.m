@@ -7,7 +7,7 @@ A = [1,3:4,2]/4;
 %%%%%%% TODO %%%%%%%
 % Refer to the lecture slide 28
 % Calculate the SVD using 'svd()' function
-[U,S,V] = ;
+[U,S,V] = svd(A);
 %%%%%%%%%%%%%%%%%%%%
 layer1 = U(:, 1)*S(1, 1)*V(:, 1)';
 layer2 = U(:, 1)*S(1, 2)*V(:, 2)';
@@ -18,7 +18,7 @@ img = double(rgb2gray(imread('lena_std.tif')));
 %%%%%%% TODO %%%%%%%
 % Refer to the lecture slide 28
 % Calculate the SVD using 'svd()' function use variable 'img'
-[U,S,V] = ;
+% [U,S,V] = svd();
 %%%%%%%%%%%%%%%%%%%%
 [U, S, V] = svd(img);
 figure;
